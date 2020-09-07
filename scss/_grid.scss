@@ -1,0 +1,21 @@
+.content-grid {
+    display: grid;
+    gap: 2em;
+    margin-bottom: 2em;
+
+    @media only screen and (min-width: 34em) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media only screen and (min-width: 48em) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media only screen and (min-width: 62em) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media only screen and (min-width: 75em) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

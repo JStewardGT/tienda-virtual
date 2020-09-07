@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Lora", serif;
+    color: var(--fontColor);
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+
+    main {
+        flex: 1 0 auto;
+    }
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+
+    @media only screen and (min-width: 48em) {
+        width: 46rem;
+    }
+
+    @media only screen and (min-width: 62em) {
+        width: 61rem;
+    }
+
+    @media only screen and (min-width: 75em) {
+        width: 71rem;
+    }
+}
+
+.text-right {
+    text-align: right;
+}
+
+.title {
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+    text-align: center;
+
+    h1 {
+        color: var(--mainColor);
+    }
+}
+
+.overflow-auto {
+    overflow: auto;
+    height: 520px;
+    padding: .2em;
+}

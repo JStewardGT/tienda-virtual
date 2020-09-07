@@ -1,0 +1,34 @@
+.producto {
+    padding: 1em;
+    box-shadow: 2px 2px 8px -2px var(--fontColor);
+
+    &--img {
+        width: 100%;
+        height: 300px;
+        object-fit: contain;
+    }
+    // &--nombre {}
+    &--precio {
+        margin-bottom: 0.8em;
+    }
+}
+
+.car-producto {
+    padding: 1em;
+    box-shadow: 2px 2px 8px -2px var(--fontColor);
+    display: flex;
+    position: relative;
+    margin-bottom: 1.5em;
+
+    &--img {
+        width: 200px;
+        height: 200px;
+        object-fit: contain;
+    }
+
+    &--div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a class="navbar--btn navbar--btn__active" href="/index.html">INICIO</a>
+        <button class="navbar--btn" onclick="openModal()">
+            <i class="material-icons">shopping_cart</i>
+        </button>
+    </nav>
+    <main>
+        <div class="container title">
+            <h1>TIENDA</h1>
+        </div>
+        <secttion class="container content-grid" id="galeria">
+
+        </secttion>
+    </main>
+    <footer class="footer">
+        platzi master
+    </footer>
+
+    <div class="modal" id="modal">
+        <div class="modal--content">
+            <button class="modal--close modal--close__top" onclick="closeModal()">
+                <i class="material-icons">close</i>
+            </button>
+
+            <div class="overflow-auto" id="car-galeria">
+                
+            </div>
+
+            <div class="modal--comprar text-right">
+                <button class="btn btn--black">Comprar</button>
+            </div>
+
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+.modal {
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+
+    &.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &--content {
+        position: relative;
+        padding: 2em;
+        background-color: #fff;
+        height: 610px;
+        width: 800px;
+        max-width: calc(100vw - 1em);
+        z-index: 1000;
+        
+    }
+
+    &--close {
+        position: absolute;
+        right: 1em;
+        background-color: #fff;
+        border: none;
+        height: 2.2em;
+        width: 2.2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        cursor: pointer;
+
+        &__top {
+            top: -3em;
+        }
+    }
+
+    &--comprar {
+        padding-top: .5em;
+        padding-right: 1em;
+
+        .btn {
+            font-size: 1.2em;
+        }
+    }
+}
+
+// @keyframes animatedOpacity {
+//     from {
+//         opacity: 0;
+//     }
+
+//     to {
+//         opacity: 1;
+//     }
+// }
