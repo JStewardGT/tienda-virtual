@@ -3,7 +3,7 @@ Realizar landing de tienda virtual(Añadir a carrito, ver detalle del producto, 
 
 ## screenshot
 
-![Scrennshot](img/screenshot/screenshot.png)
+![Scrennshot](screenshot.png)
 
 ## Developed for
 
